@@ -1,0 +1,213 @@
+:root {
+    --dark_color: #1E202B;
+    --primary_color: #009AD8;
+    --secondary_color: rgb(191, 193, 200);
+    --white_color: #ffffff;
+    --menu-horizontal_mobile_color: #262936;
+    --card_header_color: #2D303D;
+    --card_content_color: #323544;
+    --card_middel_header: #222530;
+
+}
+
+body {
+    font-size: 14px
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--white_color)
+}
+
+/* *****************************HEADER************************** */
+header {
+    background-color: var(--dark_color);
+}
+
+header .logo .logo_text {
+    line-height: 0;
+}
+
+header .logo h1 {
+    font-size: 1rem;
+}
+
+header .logo small {
+    font-size: 0.6rem;
+    color: var(--secondary_color);
+}
+
+header .menu-horizontal #menu-icon {
+    color: var(--white_color);
+    border: 1px solid transparent;
+    background: none;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 10px 20px
+}
+
+header .menu-horizontal #menu-icon:active {
+    border-color: var(--primary_color);
+    color: var(--primary_color)
+}
+
+header .menu-horizontal ul li {
+    margin-left: 20px;
+
+}
+
+header .menu-horizontal ul li a {
+    border: 2px solid transparent;
+    padding: 5px 24px;
+    border-radius: 30px;
+    transition: 0.5s all;
+}
+
+header .menu-horizontal ul li.active a,
+header .menu-horizontal ul li:hover a {
+    border-color: #009ad8;
+    color: #009ad8;
+}
+
+.menu-vertical {
+    transition: 1s all;
+}
+
+.menu-vertical .list-group-item {
+    background-color: var(--menu-horizontal_mobile_color) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-block: 15px;
+    text-align: center;
+}
+
+.list-group-item.active {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.list-group-item.active a {
+    color: var(--primary_color)
+}
+
+/* *************************MAIN***************************** */
+main .search_area {
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    position: relative;
+}
+
+form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 17px;
+    background-color: var(--dark_color);
+    border: none !important;
+    border-radius: 40px;
+    text-indent: 15px;
+    color: white
+}
+
+main form input:focus {
+    border: none !important;
+}
+
+.btn {
+    --bs-btn-color: var(--white_color);
+    --bs-btn-bg: var(--primary_color);
+    position: absolute;
+    padding: 11px;
+    border: none;
+    border-radius: 30px;
+    top: 5px;
+    bottom: 5px;
+    right: 7px
+}
+
+.btn:hover {
+    color: var(--white_color);
+    background-color: var(--primary_color);
+    border-color: none
+}
+
+/* ****************WEATHER-DETAILS**************** */
+.weather_details {
+    min-height: 250px;
+    background-color: var(--dark_color);
+}
+
+.weather_details .container {
+    position: absolute;
+    top: 320px;
+    right: 5px;
+    left: 5px;
+}
+
+.weather_details .forecast_cards {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.weather_details .forecast {
+    color: var(--secondary_color);
+}
+
+.weather_details .forecast .card_header {
+    background-color: var(--card_header_color);
+    padding: 10px;
+
+}
+
+
+.weather_details .forecast .card_content {
+    background-color: var(--card_content_color);
+    padding: 10px
+}
+
+.weather_details .middel_card .card_header {
+    background-color: var(--card_middel_header);
+    padding: 10px
+}
+
+.weather_details .middel_card .card_content {
+    background-color: var(--menu-horizontal_mobile_color);
+    padding: 10px
+}
+
+.weather_details .forecast .card_content h2 {
+    font-size: 6rem
+}
+
+.weather_details .forecast .card_content small {
+    color: var(--primary_color)
+}
+
+.weather_details .forecast .card_content ul li {
+    margin-right: 20px
+}
+
+/* ************************FOOTER**************************/
+footer {
+    background-color: var(--card_content_color);
+    min-height: 200px;
+}
+
+footer ul li {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--dark_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 5px
+}
+
+footer ul li a i {
+    color: var(--primary_color);
+    font-size: 1.1rem
+}

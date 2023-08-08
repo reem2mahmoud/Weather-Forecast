@@ -1,0 +1,9 @@
+DEMO: https://routeweather.netlify.app/
+خلينا اقولك شوية hints تساعدك ✨
+1️⃣ علشان تحول التاريخ اللى راجع من الـ API لـيوم بالشكل دا sunday مثلا هتحتاج تعمل search عن Date Object.
+2️⃣ ممكن تعمل search عن الـ Geolocation API عشان تحدد الـ location الخاص بالـ user.
+
+ API Link : https://www.weatherapi.com/ 
+
+  Video :
+   https://drive.google.com/file/d/1JoowcgTmmGnWyw97w8YMQp6B6QI8OLDH/view?usp=sharing
