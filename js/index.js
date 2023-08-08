@@ -24,7 +24,7 @@ let forecast_cards = document.querySelectorAll(".forecast_cards")[0];
 // EVENTS
 menu_icon.addEventListener("click", showMobileMenu);
 location_field.addEventListener("input", function () {
-  getForecastDetails(location_field.value);
+  getForecastDetails(location_field.value); 
 });
 
 // FUNCTIONS
